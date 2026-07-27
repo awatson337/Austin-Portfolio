@@ -8,7 +8,7 @@ body {
     line-height: 1.5;
 }
 
-nav {
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,7 +17,18 @@ nav {
     border: 2px solid green;
 }
 
-ul {
+.nav-logo {
+    color: white;
+    margin: 0;
+    border: 2px solid yellow;
+}
+
+.nav-logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -25,7 +36,7 @@ ul {
     border: 2px solid pink;
 }
 
-ul li a {
+.nav-menu li a {
     display: block;
     color: white;
     text-align: center;
@@ -33,17 +44,67 @@ ul li a {
     text-decoration: none;
 }
 
-ul li a:hover {
+.nav-menu li a:hover {
     color: #111111;
 }
 
-h1 {
-    color: white;
-    margin: 0;
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    height: 500px;
+    background-color: aqua;
+}
+
+.hero-content {
+    border: 2px solid green;
+}
+
+.hero-heading {
+    font-size: 42px;
+    border: 2px solid red;
+}
+
+.hero-subheading {
+    font-size: 24px;
+    border: 2px solid red;
+}
+
+.hero-buttons-container {
+    display: flex;
+    align-items: left;
+    gap: 30px;
     border: 2px solid yellow;
 }
 
-h1 a {
-    color: white;
-    text-decoration: none;
+.hero-button {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.125em;
+}
+
+.hero-cta-button {
+    padding: 15px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.hero-image {
+    border: 2px solid red;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 400px;
 }
