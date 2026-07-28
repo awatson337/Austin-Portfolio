@@ -20,8 +20,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
-    backdrop-filter:blur(10px);
-    background:rgba(12,17,28,0.72);
+    backdrop-filter:blur(20px);
+    background: rgba(12,17,28,0.72);
     border-bottom:1px solid #263141;
 }
 
@@ -119,25 +119,31 @@ main {
 }
 
 .icon {
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     vertical-align: -0.125em;
     fill: white;
+}
+
+.icon:hover {
+    fill: green;
 }
 
 .hero-cta-button {
     margin-top: 20px;
     padding: 15px 30px;
-    width: 30%;
+    width: 40%;
 }
 
-.hero-image {
-    border: 2px solid red;
+.hero-cta-button:hover {
+    border: 1px solid green;
+    color: green;
 }
 
 .hero-image img {
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
 }
 
 .about {
@@ -153,7 +159,7 @@ main {
     font-weight: 800; 
     font-size: clamp(28px,4vw,40px);
     letter-spacing: -0.02em; 
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .about-grid {
