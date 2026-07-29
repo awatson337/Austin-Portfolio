@@ -1,3 +1,21 @@
+:root {
+    --pale-oak: #d7c6ad;
+    --amber-glow: #f7a026;
+    --baltic-blue: #005a87;
+    --black: #000000;
+    --cornflower-ocean: #006ba1;
+
+    --fs-xs: 12px;
+    --fs-sm: 14px;
+    --fs-base: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 20px;
+    --fs-2xl: 24px;
+    --fs-3xl: 30px;
+    --fs-4xl: 36px;
+    --fs-5xl: 48px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,8 +23,11 @@
 body {
     margin: 0;
     font-family: system-ui, sans-serif;
+    font-size: var(--fs-base);
     line-height: 1.5;
     overflow-x:hidden;
+    background-color: var(--pale-oak);
+    color: var(--baltic-blue);
 }
 
 .nav {
@@ -21,8 +42,7 @@ body {
     justify-content: space-between;
     padding: 0 40px;
     backdrop-filter:blur(20px);
-    background: rgba(12,17,28,0.72);
-    border-bottom:1px solid #263141;
+    background: rgba(0, 0, 0, 0.35);
 }
 
 main {
@@ -30,8 +50,8 @@ main {
 }
 
 .nav-logo {
-    color: white;
-    font-size: 28px;
+    color: var(--baltic-blue);
+    font-size: var(--fs-3xl);
     margin: 0;
     text-decoration: none;
 }
@@ -46,8 +66,8 @@ main {
 
 .nav-menu li a {
     display: block;
-    color: white;
-    font-size: 18px;
+    color: var(--baltic-blue);
+    font-size: var(--fs-lg);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -55,7 +75,7 @@ main {
 
 .nav-menu li a:hover,
 .nav-menu li a:focus-visible {
-    color: #111111;
+    color: var(--amber-glow);
 }
 
 
@@ -65,8 +85,7 @@ main {
     justify-content: space-evenly;
     padding: 30px;
     height: 700px;
-    background-color: #0c111c;
-    color: white;
+    color: var(--baltic-blue);
 }
 
 .hero-content {
@@ -81,12 +100,12 @@ main {
 }
 
 .hero-heading {
-    font-size: 42px;
+    font-size: var(--fs-5xl);
     margin: 0;
 }
 
 .hero-subheading {
-    font-size: 24px;
+    font-size: var(--fs-2xl);
     margin: 0;
 }
 
@@ -101,7 +120,7 @@ main {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
+    border: 1px solid var(--baltic-blue);
     border-radius: 10px;
     background-color: transparent;
     color: inherit;
@@ -110,7 +129,7 @@ main {
 }
 
 .btn:focus-visible {
-    outline: 2px solid #111111;
+    outline: 2px solid var(--amber-glow);
     outline-offset: 2px;
 }
 
@@ -122,11 +141,11 @@ main {
     width: 1.5em;
     height: 1.5em;
     vertical-align: -0.125em;
-    fill: white;
+    fill: var(--baltic-blue);
 }
 
 .icon:hover {
-    fill: green;
+    fill: var(--amber-glow);
 }
 
 .hero-cta-button {
@@ -136,8 +155,8 @@ main {
 }
 
 .hero-cta-button:hover {
-    border: 1px solid green;
-    color: green;
+    border: 1px solid var(--amber-glow);
+    color: var(--amber-glow);
 }
 
 .hero-image img {
@@ -148,6 +167,7 @@ main {
 
 .about {
     padding: 80px 30px;
+
 }
 
 .wrap {
@@ -156,10 +176,11 @@ main {
 }
 
 .sec-title {
-    font-weight: 800; 
-    font-size: clamp(28px,4vw,40px);
-    letter-spacing: -0.02em; 
+    font-weight: 800;
+    font-size: clamp(var(--fs-3xl), 4vw, var(--fs-4xl));
+    letter-spacing: -0.02em;
     margin-bottom: 50px;
+    color: var(--baltic-blue);
 }
 
 .about-grid {
@@ -175,14 +196,14 @@ main {
 }
   
 .about-text p {
-    color: #8b96ac; 
-    margin-bottom: 18px; 
-    font-size: 15.5px;
+    color: var(--baltic-blue);
+    margin-bottom: 18px;
+    font-size: var(--fs-base);
 }
-  
+
 .about-text .lead {
-    color: black; 
-    font-size: 18px; 
+    color: var(--baltic-blue);
+    font-size: var(--fs-lg);
     margin-bottom: 22px;
 }
 
@@ -198,7 +219,7 @@ main {
     top: 6px;
     bottom: 6px;
     width: 1px;
-    background: #263141;
+    background: var(--baltic-blue);
 }
 
 .t-item {
@@ -217,44 +238,44 @@ main {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background: #131b2b;
-    border: 2px solid #8b96ac;
+    background: var(--black);
+    border: 2px solid var(--baltic-blue);
 }
 
 .t-item.pivot .t-dot {
-    border-color: #f2a93b; 
-    background: #f2a93b; 
-    box-shadow:0 0 10px #f2a93b;
+    border-color: var(--amber-glow);
+    background: var(--amber-glow);
+    box-shadow:0 0 10px var(--amber-glow);
 }
 
 .t-role {
-    font-weight: 700; 
-    font-size: 15.5px;
+    font-weight: 700;
+    font-size: var(--fs-base);
 }
 
 .t-meta {
-    font-family: 'JetBrains Mono', monospace; 
-    font-size: 11.5px; 
-    color: #8b96ac; 
-    letter-spacing: 0.03em; 
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--fs-xs);
+    color: var(--baltic-blue);
+    letter-spacing: 0.03em;
     margin: 3px 0 8px;
 }
 
 .t-desc {
-    font-size: 14px; 
-    color: #8b96ac;
+    font-size: var(--fs-sm);
+    color: var(--baltic-blue);
 }
   
 .t-item.pivot .t-role {
-    color: #f2a93b;
+    color: var(--amber-glow);
 }
 
 .footer {
     padding: 24px;
     text-align: center;
-    color: #8b96ac;
-    font-size: 14px;
-    border-top: 1px solid #263141;
+    color: var(--baltic-blue);
+    font-size: var(--fs-sm);
+    border-top: 1px solid var(--baltic-blue);
 }
 
 .footer p {
@@ -262,23 +283,22 @@ main {
 }
 
 .skills {
-    background-color: bisque;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 .skills-container {
     position: relative;
     width: 700px;
     height: 600px;
-    background-color: blue;
-    border: 2px solid red;
+    border: 2px solid var(--black);
     border-top: none;
     border-right: none;
     margin-top: 100px;
     margin-bottom: 60px;
+    margin-left: 120px;
     z-index: 0;
 }
 
@@ -295,7 +315,7 @@ main {
     position: relative;
     left: -11px;
     height: 100px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid var(--black);
     list-style: none;
 }
 
@@ -305,7 +325,7 @@ main {
     top: -15px;
     left: -30px;
     height: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--black);
     transform: skewY(45deg);
     width: 30px;
 }
@@ -313,17 +333,18 @@ main {
 .bar-graph li div {
     position: absolute;
     width: 80px;
-    font-size: 16px;
+    font-size: var(--fs-base);
     left: -115px;
     padding-top: 55px;
-    color: red;
+    color: var(--amber-glow);
     text-align: right;
 }
 
 .bar {
-    width: 50px;
+    width: 52px;
     height: 32%;
-    background-color: #f2a93b;
+    background-color: var(--amber-glow);
+    border: 1px solid var(--black);
     position: absolute;
     left: 10%;
     bottom: 5px;
@@ -335,7 +356,8 @@ main {
     content: "";
     width: 50px;
     height: 20px;
-    background-color: #f2a93b;
+    background-color: #ffc46b;
+    border: 1px solid var(--black);
     position: absolute;
     top: -20px;
     left: -10px;
@@ -346,7 +368,8 @@ main {
     content: "";
     width: 20px;
     height: 100%;
-    background-color: #f2a93b;
+    background-color: #b3720f;
+    border: 1px solid var(--black);
     position: absolute;
     top: -10px;
     left: -20px;
@@ -376,20 +399,22 @@ main {
     transform: translateX(-50%);
     width: 100px;
     text-align: center;
-    font-size: 16px;
-    color: black;
+    font-size: var(--fs-base);
+    color: var(--amber-glow);
     white-space: nowrap;
 }
 
 .additional-skills-container {
-    color: red;
+    color: var(--baltic-blue);
     padding-top: 20px;
-    border-top: 3px solid red;
+    padding-bottom: 60px;
+    border-top: 3px solid var(--baltic-blue);
 }
 
 .additional-skills-container p {
-    font-size: 18px;
+    font-size: var(--fs-lg);
     text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 .additional-skills {
@@ -401,7 +426,8 @@ main {
 
 .additional-skills span {
     padding: 15px 30px;
-    border: 1px solid green;
+    border: 1px solid var(--cornflower-ocean);
+    border-radius: 50%;
 }
 
 .carousel {
