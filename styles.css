@@ -31,22 +31,11 @@ body {
 }
 
 .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
     height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
-    backdrop-filter:blur(20px);
-    background: rgba(0, 0, 0, 0.35);
-}
-
-main {
-    padding-top: 72px;
 }
 
 .nav-logo {
@@ -57,33 +46,41 @@ main {
 }
 
 .nav-menu {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    margin-right: 150px;
+    padding: 15px 30px;
     display: flex;
+    align-items: center;
+    border-radius: 40px;
+    backdrop-filter:blur(20px);
+    background: rgba(0, 0, 0, 0.35);
 }
 
 .nav-menu li a {
     display: block;
-    color: var(--baltic-blue);
+    color: var(--amber-glow);
     font-size: var(--fs-lg);
     text-align: center;
-    padding: 14px 16px;
+    padding: 0 16px;
     text-decoration: none;
 }
 
 .nav-menu li a:hover,
 .nav-menu li a:focus-visible {
-    color: var(--amber-glow);
+    color: var(--baltic-blue);
 }
-
 
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 30px;
+    margin-top: 72px;
     height: 700px;
     color: var(--baltic-blue);
 }
@@ -120,12 +117,16 @@ main {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--baltic-blue);
-    border-radius: 10px;
+    border: 1px solid currentColor;
+    border-radius: 8px;
     background-color: transparent;
-    color: inherit;
+    color: var(--baltic-blue);
     text-decoration: none;
     cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--amber-glow);
 }
 
 .btn:focus-visible {
@@ -141,22 +142,21 @@ main {
     width: 1.5em;
     height: 1.5em;
     vertical-align: -0.125em;
-    fill: var(--baltic-blue);
-}
-
-.icon:hover {
-    fill: var(--amber-glow);
+    fill: currentColor;
 }
 
 .hero-cta-button {
     margin-top: 20px;
     padding: 15px 30px;
-    width: 40%;
+    width: 30%;
+    border: none;
+    background-color: var(--baltic-blue);
+    color: var(--amber-glow);
 }
 
 .hero-cta-button:hover {
-    border: 1px solid var(--amber-glow);
-    color: var(--amber-glow);
+    background-color: var(--amber-glow);
+    color: var(--baltic-blue);
 }
 
 .hero-image img {
@@ -166,7 +166,7 @@ main {
 }
 
 .about {
-    padding: 80px 30px;
+    padding: 80px 30px 120px 30px;
 
 }
 
@@ -199,12 +199,6 @@ main {
     color: var(--baltic-blue);
     margin-bottom: 18px;
     font-size: var(--fs-base);
-}
-
-.about-text .lead {
-    color: var(--baltic-blue);
-    font-size: var(--fs-lg);
-    margin-bottom: 22px;
 }
 
 .timeline {
@@ -268,6 +262,7 @@ main {
   
 .t-item.pivot .t-role {
     color: var(--amber-glow);
+    font-size: var(--fs-lg);
 }
 
 .footer {
@@ -282,11 +277,15 @@ main {
     margin: 0;
 }
 
+
+
+
 .skills {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
+    margin-top: 50px;
 }
 
 .skills-container {
@@ -297,7 +296,7 @@ main {
     border-top: none;
     border-right: none;
     margin-top: 100px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     margin-left: 120px;
     z-index: 0;
 }
@@ -336,7 +335,7 @@ main {
     font-size: var(--fs-base);
     left: -115px;
     padding-top: 55px;
-    color: var(--amber-glow);
+    color: var(--baltic-blue);
     text-align: right;
 }
 
@@ -400,7 +399,7 @@ main {
     width: 100px;
     text-align: center;
     font-size: var(--fs-base);
-    color: var(--amber-glow);
+    color: var(--baltic-blue);
     white-space: nowrap;
 }
 
