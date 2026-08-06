@@ -24,7 +24,7 @@
 
         revealEls.forEach((el) => revealObserver.observe(el));
     }
-    
+
     const skillsContainer = document.querySelector('.skills-container');
     const bars = skillsContainer ? skillsContainer.querySelectorAll('.bar') : [];
 
@@ -32,6 +32,8 @@
         bars.forEach((bar) => {
             bar.style.height = '0px';
         });
+
+        void skillsContainer.offsetHeight;
 
         const barObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach((entry) => {
@@ -45,5 +47,22 @@
         }, { threshold: 0.3 });
 
         barObserver.observe(skillsContainer);
+    }
+
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        navMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
     }
 })();

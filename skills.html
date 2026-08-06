@@ -4,10 +4,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Austin Portfolio Skills</title>
-        <meta name="keywords" content="web developer, front-end developer, html, css, javascript, react, wordpress" />
-        <meta name="description" content="Here are my skills." />
-        <meta name="author" content="Austin" />
+        <title>Skills | Austin Portfolio</title>
+        <meta name="description" content="Austin Watson's front-end skills: HTML, CSS, JavaScript, and React, plus WordPress, SEO, and analytics experience." />
+        <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Skills | Austin Portfolio" />
+        <meta property="og:description" content="Austin Watson's front-end skills: HTML, CSS, JavaScript, and React, plus WordPress, SEO, and analytics experience." />
+        <meta property="og:image" content="/img/hero-profile-image.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="stylesheet" href="styles.css" />
     </head>
 
@@ -15,7 +19,12 @@
         <header>
             <nav class="nav">
                 <a class="nav-logo" href="/index.html">Austin Portfolio</a>
-                <ul class="nav-menu">
+                <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/skills.html">Skills</a></li>
                     <li><a href="/projects.html">Projects</a></li>
@@ -29,7 +38,7 @@
             <section class="skills">
                 <div class="wrap">
                     <h2 class="sec-title">Skills</h2>
-                    <div class="skills-container">
+                    <div class="skills-container" aria-hidden="true">
                         <div class="bar one"><span class="bar-label">HTML</span></div>
                         <div class="bar two"><span class="bar-label">CSS</span></div>
                         <div class="bar three"><span class="bar-label">JavaScript</span></div>
@@ -42,6 +51,24 @@
                             <li><div>20%</div></li>
                         </ul>
                     </div>
+                    <ul class="skills-list">
+                        <li>
+                            <span>HTML</span>
+                            <meter value="75" min="0" max="100">75%</meter>
+                        </li>
+                        <li>
+                            <span>CSS</span>
+                            <meter value="60" min="0" max="100">60%</meter>
+                        </li>
+                        <li>
+                            <span>JavaScript</span>
+                            <meter value="70" min="0" max="100">70%</meter>
+                        </li>
+                        <li>
+                            <span>React</span>
+                            <meter value="40" min="0" max="100">40%</meter>
+                        </li>
+                    </ul>
                     <div class="additional-skills-container reveal">
                         <p>Also working with</p>
                         <div class="additional-skills">
