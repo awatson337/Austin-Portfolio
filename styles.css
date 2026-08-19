@@ -812,18 +812,6 @@ main {
     object-fit: contain;
 }
 
-@media (max-width: 800px) {
-    .project-card {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .project-media {
-        width: 100%;
-        max-width: none;
-    }
-}
-
 .card-info {
     flex: 1;
     display: flex;
@@ -900,6 +888,28 @@ main {
     border-radius: 40px;
     padding: 5px 15px;
     color: var(--midnight-navy);
+}
+
+@media (max-width: 800px) {
+    .project-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-media {
+        width: 100%;
+        max-width: none;
+    }
+
+    .card-info {
+        width: 100%;
+    }
+
+    .card-languages-container {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
