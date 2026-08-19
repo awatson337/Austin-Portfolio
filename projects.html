@@ -4,27 +4,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Austin Portfolio Projects</title>
-    <meta name="keywords" content="web developer, front-end developer" />
-    <meta name="description" content="My name is Austin, and here are my current projects" />
-    <meta name="author" content="Austin" />
+    <title>Projects | Austin Portfolio</title>
+    <meta name="description" content="Front-end projects by Austin Watson, including a full WordPress site redesign, local SEO builds, and a custom JavaScript quote-estimator tool." />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Projects | Austin Portfolio" />
+    <meta property="og:description" content="Front-end projects by Austin Watson, including a full WordPress site redesign, local SEO builds, and a custom JavaScript quote-estimator tool." />
+    <meta property="og:image" content="/img/hero-profile-image.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
     <header>
         <nav class="nav">
-            <a class="nav-logo" href="/index.html">Austin Portfolio</a>
+            <a class="nav-logo" href="/">Austin Portfolio</a>
             <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/skills.html">Skills</a></li>
-                <li><a href="/projects.html">Projects</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/skills">Skills</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
 
             </ul>
         </nav>
@@ -37,47 +41,58 @@
                 <div class="projects-container">
 
                     <div class="project-card reveal">
-                        <div class="hero-image">
-                            <img src="/img/hero-image.jpeg"  alt="PUT ALT" />
+                        <div class="project-media">
+                            <img src="/img/quote-estimator-tool-demo-image.jpg" alt="Quote Estimator Tool interface" />
                         </div>
                         <div class="card-info">
-                            <h3>Project title</h3>
-                            <p>Project description, jsdbagibsijdskjdsjkjkdnsajknsjknakjnsdkgjnadskngkjdsanskjdngjkdanskjfnajksnjkankjnfskjnjkads</p>
-                            <a href="https://blackhawkmc.com" target="_blank">View</a>
+                            <h3>Quote Estimator Tool</h3>
+                            <p>A tool built for generating orifice meter run quotes. Select your specs, pull in customer info, and generate a printable quote on the spot.</p>
+                            <div class="card-links">
+                                <a href="https://quote-estimator-tool-demo.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Quote Estimator Tool demo">View</a>
+                                <a href="https://github.com/awatson337/quote-estimator-tool-demo" target="_blank" rel="noopener noreferrer" class="btn card-icon-link" aria-label="GitHub repository">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg>
+                                </a>
+                            </div>
                             <div class="card-languages-container">
-                                <span>WordPress</span>
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>PDF Generation</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-card reveal">
-                        <div class="hero-image">
-                            <img src="/img/hero-image.jpeg"  alt="PUT ALT" />
+                        <div class="project-media">
+                            <video src="/img/bmc-website-video.mp4" autoplay muted loop playsinline poster="/img/bmc-website-poster-image.jpg" aria-hidden="true"></video>
                         </div>
                         <div class="card-info">
-                            <h3>Project title</h3>
-                            <p>Project description, jsdbagibsijdskjdsjkjkdnsajknsjknakjnsdkgjnadskngkjdsanskjdngjkdanskjfnajksnjkankjnfskjnjkads</p>
-                            <a href="https://blackhawkmc.com" target="_blank">View</a>
+                            <h3>Blackhawk Measurement Consulting</h3>
+                            <p>Full 19-page site redesign for a B2B oil & gas services company, including blog infrastructure, custom lead-gen forms, and a technical SEO rebuild. 458% increase in impressions, 144% increase in clicks and 89% increase in organic search traffic in first 3 months without paid ads.</p>
+                            <a href="https://blackhawkmc.com/" target="_blank" rel="noopener noreferrer" aria-label="View Blackhawk Measurement Consulting website">View</a>
                             <div class="card-languages-container">
                                 <span>WordPress</span>
+                                <span>SEO</span>
+                                <span>Google Analytics</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-card reveal">
-                        <div class="hero-image">
-                            <img src="/img/hero-image.jpeg"  alt="PUT ALT" />
+                        <div class="project-media">
+                            <video src="/img/spanks-website-video.mp4" autoplay muted loop playsinline poster="/img/spanks-website-poster-image.jpg" aria-hidden="true"></video>
                         </div>
                         <div class="card-info">
-                            <h3>Project title</h3>
-                            <p>Project description, jsdbagibsijdskjdsjkjkdnsajknsjknakjnsdkgjnadskngkjdsanskjdngjkdanskjfnajksnjkankjnfskjnjkads</p>
-                            <a href="https://blackhawkmc.com" target="_blank">View</a>
+                            <h3>Spanks Automotive Shop</h3>
+                            <p>5-page custom site for a local auto shop, built with an integrated booking system and local SEO to drive foot traffic and appointments.</p>
+                            <a href="https://spanksautomotiveshop.com/" target="_blank" rel="noopener noreferrer" aria-label="View Spanks Automotive Shop website">View</a>
                             <div class="card-languages-container">
                                 <span>WordPress</span>
+                                <span>Local SEO</span>
                             </div>
                         </div>
                     </div>
-        
+
                 </div>
             </div>
         </section>
@@ -89,6 +104,8 @@
     </footer>
 
     <script src="script.js" defer></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
 
 </body>
 </html>

@@ -49,6 +49,13 @@
         barObserver.observe(skillsContainer);
     }
 
+    if (prefersReduced) {
+        document.querySelectorAll('.project-media video').forEach((video) => {
+            video.removeAttribute('autoplay');
+            video.pause();
+        });
+    }
+
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
 
